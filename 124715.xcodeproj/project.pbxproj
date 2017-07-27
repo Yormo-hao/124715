@@ -14,6 +14,8 @@
 		0F4F92151F29F30E0028BE7E /* _24715.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0F4F92131F29F30E0028BE7E /* _24715.xcdatamodeld */; };
 		0F4F92171F29F30E0028BE7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F4F92161F29F30E0028BE7E /* Assets.xcassets */; };
 		0F4F921A1F29F30E0028BE7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F4F92181F29F30E0028BE7E /* LaunchScreen.storyboard */; };
+		0F4F92241F29FDBB0028BE7E /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4F92221F29FDBB0028BE7E /* TableViewCell.m */; };
+		0F4F92251F29FDBB0028BE7E /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F4F92231F29FDBB0028BE7E /* TableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,9 @@
 		0F4F92161F29F30E0028BE7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F4F92191F29F30E0028BE7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F4F921B1F29F30E0028BE7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F4F92211F29FDBB0028BE7E /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		0F4F92221F29FDBB0028BE7E /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		0F4F92231F29FDBB0028BE7E /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +75,9 @@
 				0F4F921B1F29F30E0028BE7E /* Info.plist */,
 				0F4F92131F29F30E0028BE7E /* _24715.xcdatamodeld */,
 				0F4F92071F29F30E0028BE7E /* Supporting Files */,
+				0F4F92211F29FDBB0028BE7E /* TableViewCell.h */,
+				0F4F92221F29FDBB0028BE7E /* TableViewCell.m */,
+				0F4F92231F29FDBB0028BE7E /* TableViewCell.xib */,
 			);
 			path = 124715;
 			sourceTree = "<group>";
@@ -142,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F4F921A1F29F30E0028BE7E /* LaunchScreen.storyboard in Resources */,
+				0F4F92251F29FDBB0028BE7E /* TableViewCell.xib in Resources */,
 				0F4F92171F29F30E0028BE7E /* Assets.xcassets in Resources */,
 				0F4F92121F29F30E0028BE7E /* Main.storyboard in Resources */,
 			);
@@ -157,6 +166,7 @@
 				0F4F920F1F29F30E0028BE7E /* ViewController.m in Sources */,
 				0F4F92151F29F30E0028BE7E /* _24715.xcdatamodeld in Sources */,
 				0F4F920C1F29F30E0028BE7E /* AppDelegate.m in Sources */,
+				0F4F92241F29FDBB0028BE7E /* TableViewCell.m in Sources */,
 				0F4F92091F29F30E0028BE7E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

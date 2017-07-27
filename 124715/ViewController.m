@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
-
-@interface ViewController ()
+#import "TableViewCell.h"
+@interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong,nonatomic) NSArray     *content;
+@property (strong,nonatomic) NSArray     *tag;
 
 @end
 
@@ -16,13 +19,45 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
+    self.content = @[ @"Monday", @"Tuesday", @"Wednesday",@"Thursday",@"Friday",@"Saturday",@"Sunday"];
+    
+      self.tag = @[@"1", @"2", @"3"];
+    
 }
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+
+#pragma mark - TableView DataSource Implementation
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [self.content count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+
+    
+    TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TableViewCell" forIndexPath:indexPath];
+    
+    
+    cell.tag.text = @"tag";
+    cell.content.text = @"content";
+    
+    
+    return cell;
+    
 }
 
 
